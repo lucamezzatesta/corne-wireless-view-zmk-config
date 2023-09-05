@@ -48,6 +48,14 @@
                 <&mo 2>,
                 <&tog 2>;
         };
+        cmd_option: cmd_option {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CMD_OPTION";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_GUI>,
+                <&kp LEFT_ALT>;
+        };
     };
 
     keymap {
@@ -64,7 +72,7 @@
             bindings = <
 &mt LG(TAB) TAB   &mt LG(Q) Q  &mt LG(W) W  &mt LG(E) E  &mt LG(R) R  &mt LG(T) T                    &mt LG(Y) Y  &mt LG(U) U  &mt LG(I) I          &mt LG(O) O            &mt LG(P) P                  &kp ESC
 &kp LEFT_CONTROL  &mt LG(A) A  &mt LG(S) S  &mt LG(D) D  &mt LG(F) F  &mt LG(G) G                    &mt LG(H) H  &mt LG(J) J  &mt LG(K) K          &mt LG(L) L            &mt LG(SEMICOLON) SEMICOLON  &mt LG(SQT) SQT
-&kp LEFT_GUI      &mt LG(Z) Z  &mt LG(X) X  &mt LG(C) C  &mt LG(V) V  &mt LG(B) B                    &mt LG(N) N  &mt LG(M) M  &mt LG(COMMA) COMMA  &mt LG(PERIOD) PERIOD  &mt LG(SLASH) SLASH          &mt LG(GRAVE) GRAVE
+&cmd_option       &mt LG(Z) Z  &mt LG(X) X  &mt LG(C) C  &mt LG(V) V  &mt LG(B) B                    &mt LG(N) N  &mt LG(M) M  &mt LG(COMMA) COMMA  &mt LG(PERIOD) PERIOD  &mt LG(SLASH) SLASH          &mt LG(GRAVE) GRAVE
                                             &kp ENTER    &shift_lock  &mt LA(BACKSPACE) BACKSPACE    &kp SPACE    &layer_1     &layer_2
             >;
         };
