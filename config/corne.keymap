@@ -30,7 +30,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LEFT_SHIFT>,
-                <&kp CAPSLOCK>;
+                <&caps_word>;
         };
         layer_1: layer_1 {
             compatible = "zmk,behavior-tap-dance";
