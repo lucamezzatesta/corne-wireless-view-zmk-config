@@ -70,10 +70,10 @@
 
             label = "Base";
             bindings = <
-&mt LG(TAB) TAB   &mt LG(Q) Q  &mt LG(W) W  &mt LG(E) E          &mt LG(R) R  &mt LG(T) T            &mt LG(Y) Y                  &mt LG(U) U  &mt LG(I) I          &mt LG(O) O            &mt LG(P) P                  &kp ESC
-&kp LEFT_CONTROL  &mt LG(A) A  &mt LG(S) S  &mt LG(D) D          &mt LG(F) F  &mt LG(G) G            &mt LG(H) H                  &mt LG(J) J  &mt LG(K) K          &mt LG(L) L            &mt LG(SEMICOLON) SEMICOLON  &mt LG(SQT) SQT
-&cmd_opt          &mt LG(Z) Z  &mt LG(X) X  &mt LG(C) C          &mt LG(V) V  &mt LG(B) B            &mt LG(N) N                  &mt LG(M) M  &mt LG(COMMA) COMMA  &mt LG(PERIOD) PERIOD  &mt LG(SLASH) SLASH          &mt LG(GRAVE) GRAVE
-                                            &mt LG(ENTER) ENTER  &shift_lock  &mt LA(SPACE) SPACE    &mt LG(BACKSPACE) BACKSPACE  &layer_1     &layer_2
+&mt LG(TAB) TAB   &mt LG(Q) Q  &mt LG(W) W  &mt LG(E) E          &mt LG(R) R  &mt LG(T) T                    &mt LG(Y) Y          &mt LG(U) U  &mt LG(I) I          &mt LG(O) O            &mt LG(P) P                  &kp ESC
+&kp LEFT_CONTROL  &mt LG(A) A  &mt LG(S) S  &mt LG(D) D          &mt LG(F) F  &mt LG(G) G                    &mt LG(H) H          &mt LG(J) J  &mt LG(K) K          &mt LG(L) L            &mt LG(SEMICOLON) SEMICOLON  &mt LG(SQT) SQT
+&cmd_opt          &mt LG(Z) Z  &mt LG(X) X  &mt LG(C) C          &mt LG(V) V  &mt LG(B) B                    &mt LG(N) N          &mt LG(M) M  &mt LG(COMMA) COMMA  &mt LG(PERIOD) PERIOD  &mt LG(SLASH) SLASH          &mt LG(GRAVE) GRAVE
+                                            &mt LS(ENTER) ENTER  &shift_lock  &mt LA(BACKSPACE) BACKSPACE    &mt LG(SPACE) SPACE  &layer_1     &layer_2
             >;
         };
 
