@@ -21,6 +21,26 @@
             bindings = <&mo 3>;
             key-positions = <40 41>;
         };
+
+        accent_e {
+            bindings = <&accent_e>;
+            key-positions = <40 36 3>;
+        };
+
+        accent_a {
+            bindings = <&accent_a>;
+            key-positions = <40 36 12>;
+        };
+
+        accent_o {
+            bindings = <&accent_o>;
+            key-positions = <40 36 9>;
+        };
+
+        accent_u {
+            bindings = <&accent_u>;
+            key-positions = <40 36 7>;
+        };
     };
 
     behaviors {
@@ -63,6 +83,36 @@
                 <&kp RIGHT_PARENTHESIS>,
                 <&kp RIGHT_BRACKET>,
                 <&kp RIGHT_BRACE>;
+        };
+    };
+
+    macros {
+        accent_e: accent_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(GRAVE) &kp E>;
+            label = "ACCENT_E";
+        };
+
+        accent_a: accent_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(GRAVE) &kp A>;
+            label = "ACCENT_A";
+        };
+
+        accent_o: accent_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(GRAVE) &kp O>;
+            label = "ACCENT_O";
+        };
+
+        accent_u: accent_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(GRAVE) &kp U>;
+            label = "ACCENT_U";
         };
     };
 
