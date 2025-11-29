@@ -21,26 +21,6 @@
             bindings = <&mo 3>;
             key-positions = <40 41>;
         };
-
-        accent_e {
-            bindings = <&accent_e>;
-            key-positions = <40 36 3>;
-        };
-
-        accent_a {
-            bindings = <&accent_a>;
-            key-positions = <40 36 12>;
-        };
-
-        accent_o {
-            bindings = <&accent_o>;
-            key-positions = <40 36 9>;
-        };
-
-        accent_u {
-            bindings = <&accent_u>;
-            key-positions = <40 36 7>;
-        };
     };
 
     behaviors {
@@ -128,10 +108,10 @@
 
             display-name = "Base";
             bindings = <
-&mt LG(TAB) TAB   &mt LG(Q) Q  &mt LG(W) W  &mt LG(E) E   &mt LG(R) R  &mt LG(T) T                    &mt LG(Y) Y          &mt LG(U) U  &mt LG(I) I          &mt LG(O) O            &mt LG(P) P                  &gresc
-&kp LEFT_CONTROL  &mt LG(A) A  &mt LG(S) S  &mt LG(D) D   &mt LG(F) F  &mt LG(G) G                    &mt LG(H) H          &mt LG(J) J  &mt LG(K) K          &mt LG(L) L            &mt LG(SEMICOLON) SEMICOLON  &mt LG(SQT) SQT
-&kp LEFT_GUI      &mt LG(Z) Z  &mt LG(X) X  &mt LG(C) C   &mt LG(V) V  &mt LG(B) B                    &mt LG(N) N          &mt LG(M) M  &mt LG(COMMA) COMMA  &mt LG(PERIOD) PERIOD  &mt LG(SLASH) SLASH          &mt LG(ENTER) ENTER
-                                            &kp LEFT_ALT  &shift_lock  &mt LA(BACKSPACE) BACKSPACE    &mt LG(SPACE) SPACE  &layer_1     &layer_2
+&none  &kp Q        &kp W       &kp E       &kp R         &kp T                          &kp Y                &kp U        &kp I       &kp O       &kp P                &none
+&none  &mt RCTRL A  &mt LALT S  &mt LGUI D  &mt LSHIFT F  &mt ESCAPE G                   &mt ESCAPE H         &mt RSHFT J  &mt RGUI K  &mt RALT L  &mt RCTRL SEMICOLON  &none
+&none  &kp Z        &kp X       &kp C       &kp V         &kp B                          &kp N                &kp M        &kp COMMA   &kp PERIOD  &kp SLASH            &none
+                                &kp TAB     &kp ENTER     &mt LA(BACKSPACE) BACKSPACE    &mt LG(SPACE) SPACE  &layer_1     &layer_2
             >;
         };
 
@@ -145,7 +125,7 @@
             display-name = "Symbols";
             bindings = <
 &trans  &kp EXCL   &kp AT                &kp HASH        &kp DLLR   &kp PRCNT           &kp CARET          &kp AMPS       &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp GRAVE  &kp LS(LA(NUMBER_2))  &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp BACKSLASH  &open_bracket  &close_bracket        &kp COLON              &kp DOUBLE_QUOTES
+&trans  &kp GRAVE  &kp LS(LA(NUMBER_2))  &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SQT        &kp DOUBLE_QUOTES     &kp COLON              &trans
 &trans  &kp TILDE  &kp LA(NUMBER_3)      &kp UNDERSCORE  &kp PLUS   &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
                                          &trans          &trans     &trans              &trans             &trans         &trans
             >;
@@ -160,19 +140,19 @@
 
             display-name = "Numpad";
             bindings = <
-&trans  &mt LG(NUMBER_1) NUMBER_1  &mt LG(NUMBER_2) NUMBER_2  &mt LG(NUMBER_3) NUMBER_3  &mt LG(NUMBER_4) NUMBER_4  &mt LG(NUMBER_5) NUMBER_5    &mt LG(NUMBER_6) NUMBER_6      &mt LG(NUMBER_7) NUMBER_7  &mt LG(NUMBER_8) NUMBER_8  &mt LG(NUMBER_9) NUMBER_9        &mt LG(NUMBER_0) NUMBER_0  &trans
-&trans  &trans                     &trans                     &trans                     &trans                     &kp C_BRIGHTNESS_INC         &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN    &mt LA(UP_ARROW) UP_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp SEMICOLON              &kp SQT
-&trans  &trans                     &trans                     &trans                     &trans                     &kp C_BRIGHTNESS_DEC         &kp C_VOLUME_DOWN              &kp C_VOLUME_UP            &kp COMMA                  &kp PERIOD                       &kp SLASH                  &trans
-                                                              &trans                     &trans                     &trans                       &trans                         &trans                     &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5            &kp NUMBER_6     &kp NUMBER_7          &kp NUMBER_8       &kp NUMBER_9          &kp NUMBER_0  &trans
+&trans  &kp LCTRL     &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHFT             &kp ESCAPE              &mt ESCAPE LEFT  &mt RIGHT_SHIFT DOWN  &mt RGUI UP_ARROW  &mt RALT RIGHT_ARROW  &kp RCTRL     &trans
+&trans  &trans        &trans        &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN     &trans             &trans                &trans        &trans
+                                    &trans        &trans                &trans                  &trans           &trans                &trans
             >;
         };
 
         bluetooth {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &none   &none   &none  &trans  &trans
-&trans      &none         &none         &none         &none         &none           &none   &none   &none   &none  &none   &none
-&trans      &none         &none         &none         &none         &none           &none   &none   &none   &none  &none   &trans
-                                        &trans        &trans        &trans          &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &none   &none   &none  &none  &trans
+&trans  &none         &none         &none         &none         &none           &none       &none   &none   &none  &none  &trans
+&trans  &none         &none         &none         &none         &none           &none       &none   &none   &none  &none  &trans
+                                    &trans        &trans        &trans          &trans      &trans  &trans
             >;
 
             display-name = "Bluetooth";
