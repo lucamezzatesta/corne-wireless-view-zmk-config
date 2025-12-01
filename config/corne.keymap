@@ -8,11 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <350>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -35,70 +30,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
-
-        layer_1: layer_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_1";
-            #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 1>, <&tog 1>;
-        };
-
-        layer_2: layer_2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_2";
-            #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 2>, <&tog 2>;
-        };
-
-        open_bracket: open_bracket {
-            compatible = "zmk,behavior-tap-dance";
-            label = "OPEN_BRACKET";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_PARENTHESIS>,
-                <&kp LEFT_BRACKET>,
-                <&kp LEFT_BRACE>;
-        };
-
-        close_bracket: close_bracket {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CLOSE_BRACKET";
-            #binding-cells = <0>;
-            bindings =
-                <&kp RIGHT_PARENTHESIS>,
-                <&kp RIGHT_BRACKET>,
-                <&kp RIGHT_BRACE>;
-        };
-    };
-
-    macros {
-        accent_e: accent_e {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(GRAVE) &kp E>;
-            label = "ACCENT_E";
-        };
-
-        accent_a: accent_a {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(GRAVE) &kp A>;
-            label = "ACCENT_A";
-        };
-
-        accent_o: accent_o {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(GRAVE) &kp O>;
-            label = "ACCENT_O";
-        };
-
-        accent_u: accent_u {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(GRAVE) &kp U>;
-            label = "ACCENT_U";
-        };
     };
 
     keymap {
@@ -116,7 +47,7 @@
 &none  &kp Q        &kp W       &kp E            &kp R                &kp T                          &kp Y                &kp U        &kp I       &kp O       &kp P                &none
 &none  &mt RCTRL A  &mt LALT S  &mt LGUI D       &mt LSHIFT F         &kp G                          &kp H                &mt RSHFT J  &mt RGUI K  &mt RALT L  &mt RCTRL SEMICOLON  &none
 &none  &kp Z        &kp X       &kp C            &kp V                &kp B                          &kp N                &kp M        &kp COMMA   &kp PERIOD  &kp SLASH            &none
-                                &mt LG(TAB) TAB  &mt LG(ENTER) ENTER  &mt LA(BACKSPACE) BACKSPACE    &mt LG(SPACE) SPACE  &layer_1     &layer_2
+                                &mt LG(TAB) TAB  &mt LG(ENTER) ENTER  &mt LA(BACKSPACE) BACKSPACE    &mt LG(SPACE) SPACE  &mo 1        &mo 2
             >;
         };
 
