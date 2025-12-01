@@ -132,7 +132,7 @@
 &trans  &kp EXCL   &kp AT                &kp HASH        &kp DLLR   &kp PRCNT           &kp CARET          &kp AMPS       &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &kp GRAVE  &kp LS(LA(NUMBER_2))  &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SQT        &kp DOUBLE_QUOTES     &kp COLON              &trans
 &trans  &kp TILDE  &kp LA(NUMBER_3)      &kp UNDERSCORE  &kp PLUS   &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
-                                         &trans          &trans     &kp ESCAPE          &trans             &trans         &trans
+                                         &trans          &kp ESC    &trans              &trans             &trans         &trans
             >;
         };
 
