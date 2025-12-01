@@ -21,6 +21,11 @@
             bindings = <&mo 3>;
             key-positions = <40 41>;
         };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <16 19>;
+        };
     };
 
     behaviors {
