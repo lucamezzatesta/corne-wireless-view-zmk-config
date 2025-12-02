@@ -49,7 +49,23 @@
 &none  &mt LG(Q) Q  &mt LG(W) W  &mt LG(E) E      &mt LG(R) R          &mt LG(T) T                    &mt Y RG(Y)  &mt RG(U) U  &mt RG(I) I          &mt RG(O) O            &mt LG(P) P          &none
 &none  &mt RCTRL A  &mt LALT S   &mt LGUI D       &mt LSHIFT F         &mt LG(G) G                    &mt RG(H) H  &mt RSHFT J  &mt RGUI K           &mt RALT L             &mt RCTRL SEMICOLON  &none
 &none  &mt LG(Z) Z  &mt LG(X) X  &mt LG(C) C      &mt LG(V) V          &mt LG(B) B                    &mt RG(N) N  &mt RG(M) M  &mt RG(COMMA) COMMA  &mt LG(PERIOD) PERIOD  &mt LG(SLASH) SLASH  &none
-                                 &mt LS(TAB) TAB  &mt LS(ENTER) ENTER  &mt LA(BACKSPACE) BACKSPACE    &kp SPACE    &mo 1        &mo 2
+                                 &mt LS(TAB) TAB  &mt LS(ENTER) ENTER  &mt LA(BACKSPACE) BACKSPACE    &kp SPACE    &mo 2        &mo 1
+            >;
+        };
+
+        numpad {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            display-name = "Numpad";
+            bindings = <
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5            &kp NUMBER_6     &kp NUMBER_7          &kp NUMBER_8       &kp NUMBER_9          &kp NUMBER_0  &trans
+&trans  &kp LCTRL     &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHFT             &none                   &kp LEFT         &mt RIGHT_SHIFT DOWN  &mt RGUI UP_ARROW  &mt RALT RIGHT_ARROW  &kp RCTRL     &trans
+&trans  &none         &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN     &trans             &trans                &trans        &trans
+                                    &trans        &trans                &trans                  &trans           &trans                &trans
             >;
         };
 
@@ -66,22 +82,6 @@
 &trans  &kp GRAVE  &kp LS(LA(NUMBER_2))  &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SQT        &kp DOUBLE_QUOTES     &kp COLON              &trans
 &trans  &kp TILDE  &kp LA(NUMBER_3)      &kp UNDERSCORE  &kp PLUS   &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
                                          &trans          &kp ESC    &trans              &trans             &trans         &trans
-            >;
-        };
-
-        numpad {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Numpad";
-            bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5            &kp NUMBER_6     &kp NUMBER_7          &kp NUMBER_8       &kp NUMBER_9          &kp NUMBER_0  &trans
-&trans  &kp LCTRL     &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHFT             &none                   &kp LEFT         &mt RIGHT_SHIFT DOWN  &mt RGUI UP_ARROW  &mt RALT RIGHT_ARROW  &kp RCTRL     &trans
-&trans  &none         &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN     &none              &none                 &none         &trans
-                                    &trans        &trans                &trans                  &trans           &trans                &trans
             >;
         };
 
