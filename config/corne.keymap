@@ -46,7 +46,7 @@
 
             display-name = "Base";
             bindings = <
-&none  &mt LG(Q) Q  &mt LG(W) W  &mt LG(E) E      &mt LG(R) R       &mt LG(T) T                    &mt Y Y      &mt RG(U) U  &mt RG(I) I          &mt RG(O) O            &mt LG(P) P          &none
+&none  &mt LG(Q) Q  &mt LG(W) W  &mt LG(E) E      &mt LG(R) R       &mt LG(T) T                    &mt RG(Y) Y  &mt RG(U) U  &mt RG(I) I          &mt RG(O) O            &mt LG(P) P          &none
 &none  &mt RCTRL A  &mt LALT S   &mt LGUI D       &mt LSHIFT F      &mt LG(G) G                    &mt RG(H) H  &mt RSHFT J  &mt RGUI K           &mt RALT L             &mt RCTRL SEMICOLON  &none
 &none  &mt LG(Z) Z  &mt LG(X) X  &mt LG(C) C      &mt LG(V) V       &mt LG(B) B                    &mt RG(N) N  &mt RG(M) M  &mt RG(COMMA) COMMA  &mt LG(PERIOD) PERIOD  &mt LG(SLASH) SLASH  &none
                                  &mt LS(TAB) TAB  &mt ESCAPE ENTER  &mt LA(BACKSPACE) BACKSPACE    &kp SPACE    &mo 2        &mo 1
