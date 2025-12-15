@@ -81,10 +81,10 @@
 
             display-name = "Symbols";
             bindings = <
-&trans  &kp EXCL   &kp AT                &kp HASH        &kp DLLR   &kp PRCNT           &kp CARET          &kp AMPS       &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp GRAVE  &kp LS(LA(NUMBER_2))  &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SQT        &kp DOUBLE_QUOTES     &kp COLON              &trans
-&trans  &kp TILDE  &kp LA(NUMBER_3)      &kp UNDERSCORE  &kp PLUS   &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
-                                         &trans          &trans     &trans              &trans             &trans         &trans
+&trans  &kp EXCL         &kp AT                         &kp HASH        &kp DLLR              &kp PRCNT           &kp CARET          &kp AMPS                   &kp ASTERISK   &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS  &trans
+&trans  &mt LCTRL GRAVE  &mt LEFT_ALT LS(LA(NUMBER_2))  &mt LGUI MINUS  &mt LEFT_SHIFT EQUAL  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &mt RIGHT_SHIFT BACKSLASH  &mt RGUI SQT   &mt RIGHT_ALT DOUBLE_QUOTES  &mt RCTRL COLON        &trans
+&trans  &kp TILDE        &kp LA(NUMBER_3)               &kp UNDERSCORE  &kp PLUS              &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp PIPE                   &kp LESS_THAN  &kp GREATER_THAN             &kp QUESTION           &trans
+                                                        &trans          &trans                &trans              &trans             &trans                     &trans
             >;
         };
 
